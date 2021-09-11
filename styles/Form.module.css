@@ -2,12 +2,14 @@
   color: #ffffff;
   background-color: #073b4c;
   display: block;
-  padding: 0.5em;
+  padding: 0.25em 1em;
   margin: 0 auto;
   font-size: 1.5em;
   border-radius: 0.25em;
   border: 0.1em solid #ffffff;
   text-transform: uppercase;
+  font-family: Mali, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .register:focus,
