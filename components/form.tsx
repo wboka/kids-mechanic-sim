@@ -41,7 +41,7 @@ function Form(): ReactElement {
               id="year"
               type="number"
               value={year}
-              onChange={(e) => setYear(e.target.value)}
+              onChange={(e) => setYear(+e.target.value)}
               required
             />
           </div>
@@ -51,7 +51,7 @@ function Form(): ReactElement {
               id="mileage"
               type="number"
               value={mileage}
-              onChange={(e) => setMileage(e.target.value)}
+              onChange={(e) => setMileage(+e.target.value)}
               required
             />
           </div>
