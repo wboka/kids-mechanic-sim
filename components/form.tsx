@@ -4,7 +4,7 @@ import formStyles from "../styles/Form.module.css";
 function Form(): ReactElement {
   const [problem, setProblem] = useState("unknown");
 
-  const registerUser = async (event) => {
+  const registerUser = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const res = await fetch("/api/diagnose", {
