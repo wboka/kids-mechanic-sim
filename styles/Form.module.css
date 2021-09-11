@@ -1,0 +1,19 @@
+.register {
+  color: #ffffff;
+  background-color: #073b4c;
+  display: block;
+  padding: 0.5em;
+  margin: 0 auto;
+  font-size: 1.5em;
+  border-radius: 0.25em;
+  border: 0.1em solid #ffffff;
+  text-transform: uppercase;
+}
+
+.register:focus,
+.register:hover,
+.register:active {
+  color: #073b4c;
+  background-color: #ffffff;
+  border-color: #073b4c;
+}

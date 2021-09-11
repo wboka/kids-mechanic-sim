@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #06d6a0;
 }
 
 a {
@@ -11,6 +16,23 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+form input,
+form select {
+  text-align: center;
+  background-color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em;
+  border: solid #ef476f;
+  line-height: 1.5;
+  font-size: 1em;
+  border-width: 0.2em 0.5em 0.2em 0.5em;
+  border-radius: 95% 4% 92% 5%/4% 95% 6% 95%;
+}
+
+form label {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  font-weight: 600;
 }
