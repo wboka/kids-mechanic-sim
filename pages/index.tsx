@@ -11,7 +11,11 @@ const Home: NextPage = () => {
         <meta name="description" content="Garage simulator for little kids" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap"
           rel="stylesheet"
