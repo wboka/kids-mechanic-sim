@@ -2,6 +2,8 @@
 
 > Kids mechanic simulator for Hacktoberfest 2021. Proof of concept for potential kids museum. Inspired by doctor diagnosis simulator found in Lewisburg Childrens Museum.
 
+![Preview of Kid's Mechanic Simulator](./public/kids-mechanic-sim.vercel.app_.png)
+
 ## Features
 
 - Vehicle Troubleshooting Form
