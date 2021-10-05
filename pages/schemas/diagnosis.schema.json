@@ -1,0 +1,12 @@
+{
+  "$id": "https://kids-mechanic-sim.vercel.app/schemas/diagnosis.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Possible repair diagnosis for Kids Mechanic Simulator",
+  "description": "Collection of strings with problems for kids to pretend to fix on play vehicles",
+  "type": "array",
+  "items": {
+    "type": "string"
+  },
+  "minItems": 1,
+  "uniqueItems": true
+}
