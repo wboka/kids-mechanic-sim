@@ -1,0 +1,12 @@
+.title {
+  font-size: 3em;
+}
+
+.title a {
+  border-bottom: 0;
+}
+
+.title,
+.footer {
+  text-align: center;
+}

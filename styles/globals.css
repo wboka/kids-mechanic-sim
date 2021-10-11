@@ -9,11 +9,17 @@ body {
   font-family: Mali, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: #06d6a0;
+  font-size: 16px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  border-bottom: 2px solid #ef476f;
+}
+
+a:hover {
+  border-bottom-width: 5px;
 }
 
 form input,
@@ -48,4 +54,35 @@ form label {
 
 .flex-item {
   margin: 1em;
+}
+
+@media (max-width: 599px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+@media (min-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+@media (min-width: 900px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1800px) {
+  html,
+  body {
+    font-size: 20px;
+  }
 }
