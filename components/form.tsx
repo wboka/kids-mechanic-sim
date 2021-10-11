@@ -101,7 +101,7 @@ function Form(): ReactElement {
 
       <hr />
 
-      <p>
+      <p className={formStyles.problem}>
         The problem is <b>{problem}</b>
       </p>
     </div>
