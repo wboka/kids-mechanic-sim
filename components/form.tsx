@@ -3,7 +3,7 @@ import formStyles from "../styles/Form.module.css";
 
 function Form(): ReactElement {
   const [problem, setProblem] = useState("unknown");
-  const [year, setYear] = useState(2021);
+  const [year, setYear] = useState(new Date().getFullYear());
   const [make, setMake] = useState("Ford");
   const [model, setModel] = useState("Model T");
   const [type, setType] = useState("CAR");
@@ -11,6 +11,12 @@ function Form(): ReactElement {
 
   const registerUser = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    setYear(year || new Date().getFullYear());
+    setMake(make || "Ford");
+    setModel(model || "Model T");
+    setType(type || "CAR");
+    setMileage(mileage || 123456);
 
     const res = await fetch("/api/diagnose", {
       body: JSON.stringify({
@@ -42,7 +48,6 @@ function Form(): ReactElement {
               type="number"
               value={year}
               onChange={(e) => setYear(+e.target.value)}
-              required
             />
           </div>
           <div className="flex-item">
@@ -52,7 +57,6 @@ function Form(): ReactElement {
               type="number"
               value={mileage}
               onChange={(e) => setMileage(+e.target.value)}
-              required
             />
           </div>
           <div className="flex-item">
@@ -62,7 +66,6 @@ function Form(): ReactElement {
               type="text"
               value={make}
               onChange={(e) => setMake(e.target.value)}
-              required
             />
           </div>
           <div className="flex-item">
@@ -72,14 +75,12 @@ function Form(): ReactElement {
               type="text"
               value={model}
               onChange={(e) => setModel(e.target.value)}
-              required
             />
           </div>
           <div className="flex-item">
             <label htmlFor="type">Vehicle Type</label>
             <select
               id="type"
-              required
               value={type}
               onChange={(e) => setType(e.target.value)}
             >
